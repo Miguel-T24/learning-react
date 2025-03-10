@@ -2,11 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Componente from "./components/Componente.jsx"
-import Estado from './components/Estado.jsx'
-import RenderizadodeElementos from './components/RederizadodeElementos.jsx'
-import Eventos from './components/Eventos.jsx'
-
+import ContadorHooks from './components/ContadorHooks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,33 +32,11 @@ function App() {
 
       <hr />
 
-      <section>
-        <h2>Section 1</h2>
-        <h3>Componentes</h3>
-        <Componente 
-        msg="Hola soy un componente"
-        numero = {1}
-        />
-        <hr />
-        <Estado msg = "Pasandole propiedades al componente estado"/>
-      </section>
+      <h2>Aca va la seccion donde voy a practicar hooks</h2>
 
-      <hr/>
-
-      <section>
-        <h2>Section 2</h2>
-        <h3>Renderizado de Elementos</h3>
-        <RenderizadodeElementos/>
-      </section>
+      <ContadorHooks titulo="Seguidores"/>
       
-      <hr/>
 
-      <section>
-        <h2>Eventos en React</h2>
-        <Eventos/>
-      </section>
-
-      
     </>
   )
 }
