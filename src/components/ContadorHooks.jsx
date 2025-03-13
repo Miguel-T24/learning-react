@@ -1,6 +1,6 @@
 import React , {useState} from "react";
 
-function ContadorHooks(props){
+function ContadorHooks({titulo="Contador Default"}){
 
    const [contador,setContador] = useState(0); 
     // console.log(useState());
@@ -24,14 +24,11 @@ function ContadorHooks(props){
                 <button onClick={sumar}>+</button>
                 <button onClick={restar}>-</button>
             </nav>
-            <p>Contador de {props.titulo}</p>
+            <p>Contador de {titulo}</p>
             <h3>{contador}</h3>
         </>
     )
 }
 
-ContadorHooks.defaultProps = {
-    titulo: "Clicks"
-}
 
 export default ContadorHooks;

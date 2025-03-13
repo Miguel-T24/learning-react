@@ -3,12 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ContadorHooks from './components/ContadorHooks'
+import ScrollHooks from './components/Scrollhooks'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+      <h3>Este es el Use Effect</h3>
+      <ScrollHooks />
+
+      
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -34,8 +40,8 @@ function App() {
 
       <h2>Aca va la seccion donde voy a practicar hooks</h2>
 
+      <h3>Este es el Use State</h3>
       <ContadorHooks titulo="Seguidores"/>
-      
 
     </>
   )
