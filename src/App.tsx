@@ -4,16 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ContadorHooks from './components/ContadorHooks'
 import ScrollHooks from './components/Scrollhooks'
+import RelojHooks from './components/relojHooks'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-
       <h3>Este es el Use Effect</h3>
       <ScrollHooks />
 
+      <RelojHooks titulo="Reloj Parametro"/>
       
       <div>
         <a href="https://vitejs.dev" target="_blank">
